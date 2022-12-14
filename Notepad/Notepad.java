@@ -330,7 +330,7 @@ else if(cmdText.equals(fileExit))
 else if(cmdText.equals(filePrint))
 JOptionPane.showMessageDialog(
 	Notepad.this.f,
-	"Get ur printer repaired first! It seems u dont have one!",
+	"No printer found.",
 	"Bad Printer",
 	JOptionPane.INFORMATION_MESSAGE
 	);
@@ -420,7 +420,7 @@ statusBar.setVisible(temp.isSelected());
 ////////////////////////////////////
 else if(cmdText.equals(helpAboutNotepad))
 {
-JOptionPane.showMessageDialog(Notepad.this.f,aboutText,"Dedicated 2 u!",JOptionPane.INFORMATION_MESSAGE);
+JOptionPane.showMessageDialog(Notepad.this.f,aboutText,"Beta version of Notepad",JOptionPane.INFORMATION_MESSAGE);
 }
 else
 	statusBar.setText("This "+cmdText+" command is yet to be implemented");
@@ -644,11 +644,13 @@ final String viewStatusBar="Status Bar";
 final String helpHelpTopic="Help Topic";
 final String helpAboutNotepad="About Javapad";
 
-final String aboutText=
+final String aboutText= "Just another Notepad";
+/* 
 	"<html><big>Your Javapad</big><hr><hr>"
 	+"<p align=right>Prepared by a Ducatian!"
 	+"<hr><p align=left>I Used jdk1.5 to compile the source code.<br><br>"
 	+"<strong>Thanx 4 using Javapad</strong><br>"
 	+"Ur Comments as well as bug reports r very welcome at<p align=center>"
 	+"<hr><em><big>radialgoal@gmail.com</big></em><hr><html>";
+	*/
 }
